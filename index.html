@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>What Can I Order?</title>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.54.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.css' type='text/css' />
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+		<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <div class="container">
+      <!--Top heading for Landing Page-->
+      <div class="wcio-logo">
+        <h1>What Can I Order?</h1>
+      </div>
+
+      <!--Diet Restriction List-->
+      <div class="restrictions">
+        <h2>Choose Diet Restrictions</h2>
+
+        <!--Checkboxes for diet restrictions-->
+        <div class="restriction-options-container">
+          <div class="left-list-items">
+            <div>
+              <input type="checkbox" id="low-sodium" name="low-sodium" value="" class="checkbox">
+              <label for="low-sodium">Low Sodium</label>
+            </div>
+            <div>
+              <input type="checkbox" id="low-potassium" name="low-potassium" value="" class="checkbox">
+              <label for="low-potassium">Low Potassium</label>
+            </div>
+          </div>
+          <div class="right-list-items">
+            <div>
+              <input type="checkbox" id="low-cholestorol" name="low-cholestorol" value="" class="checkbox">
+              <label for="low-cholestorol">Low Cholestorol</label>
+            </div>
+            <div>
+              <input type="checkbox" id="low-sugar" name="low-sugar" value="" class="checkbox">
+              <label for="low-sugar">Low Sugar</label>
+            </div>
+          </div>
+        </div> <!--End of diet restrictions checkbox container-->
+
+        <!--Search Button-->
+        <div class="search">
+          <button type="button" class="search-button">Search</button>
+          <button type="button" class="new-search-button">New Search</button>
+          <button type="button" class="back-button">Back to Results</button>
+        </div>
+      </div>
+
+      <!--List of Restaurants-->
+      <div class="restaurant-list">
+        <h2>Restaurants</h2>
+        <button type="button" class="map-view-button hide">Map View</button>
+        <button type="button" class="list-view-button hide">List View</button>
+        <div class="map-container hide">
+          <div id="map2"></div>
+        </div>
+        <ul>
+        </ul>
+      </div>
+
+      <!--Restaurant Info Container-->
+      <div class="restaurant-info-container">
+        <!--Restaurant name and menu items-->
+        <div class="results">
+          <h3>Restaurant Name</h3>
+          <!-- <div class="carousel"></div> -->
+          <ul class="menu-item-list">
+          </ul>
+        </div>
+
+        <!--Sidebar with restaurant information-->
+        <div class="sidebar">
+          <h3>Map</h3>
+          <div class="map-container">
+            <div id="map"></div>
+          </div>
+          <h3 class="site">Website</h3>
+          <h3>Address</h3>
+          <div class="full-address">
+            <p class="street"></p>
+            <p class="city"></p>
+            <p class="state"></p>
+            <p class="zip"></p>
+          </div>
+          <h3>Phone</h3>
+          <div class="phone-number">Phone number</div>
+        </div>
+
+      </div> <!--End of restaurant info container-->
+
+    </div> <!--End of container-->
+
+
+
+    <!-- Load jQuery library and link index.js file -->
+    <script src="js/jquery-2.1.4.js"></script>
+    <!-- <script src="js/jquery.js"></script> -->
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.54.0/mapbox-gl.js'></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.min.js'></script>
+    <script src="js/index.js"></script>
+
+  </body>
+</html>
