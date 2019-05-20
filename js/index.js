@@ -696,9 +696,7 @@ $(function() {
     //Listen for click on link on popup in map. Call handleRestaurantLink
     //funciton.
     // $("#map2 a").click(handleRestaurantLink);
-    $('body').on('click', '.mapboxgl-popup-content a', function () {
-      console.log('clicked on map item')
-    })
+    $('body').on('click', '.mapboxgl-popup-content a', handleRestaurantLink);
   };//end of handleMapView function
 
   function handleBackToList() {
