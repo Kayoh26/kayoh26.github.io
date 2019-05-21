@@ -4,7 +4,12 @@
 body {
   font-family: Helvetica, Arial, sans-serif;
   margin: 0 auto;
+  /* background-color: #43455c; */
 }
+/* .container{
+  margin: 0 auto;
+  background-color: #43455c;
+} */
 
 /*Logo Style*/
 .wcio-logo {
@@ -272,7 +277,7 @@ img{
   .restaurant-list {
     padding: 30px 200px;
   }
-  
+
   .restaurant-info-container {
     padding: 30px 150px;
   }
