@@ -622,6 +622,7 @@ $(function() {
     $(".restaurant-info-container").addClass("hide");
     $(".back-button").addClass("hide");
     $(".map-view-button").addClass("hide");
+    $(".list-view-button").addClass("hide");
     $(".restaurant-list .map-container").addClass("hide");
   }; //end of handleNewSearch function
 
@@ -699,7 +700,7 @@ $(function() {
           // console.log(query);
           if (feature.name.toLowerCase().search(query.toLowerCase()) !== -1) {
             // add a star emoji as a prefix for custom data results
-            // using carmen geojson format: 
+            // using carmen geojson format:
             let matchingRestaurant = {
               'type': 'Feature',
               'properties': {
