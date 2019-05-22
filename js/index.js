@@ -687,6 +687,51 @@ $(function() {
       .addTo(map2)
     });
 
+    function forwardGeocoder (query) {
+      let matchingRestaurants = [];
+
+      console.log('in forwardGeocoder', restFilter)
+
+      for (let i = 0; i < restFilter.length; i++) {
+          let feature = restFilter[i];
+
+          // console.log(feature);
+          // console.log(query);
+          if (feature.name.toLowerCase().search(query.toLowerCase()) !== -1) {
+            // add a star emoji as a prefix for custom data results
+            // using carmen geojson format: 
+            let matchingRestaurant = {
+              'type': 'Feature',
+              'properties': {
+                'title': `${feature.name}`,
+                'description': ''
+              },
+              'geometry': {
+                'coordinates': [
+                  `${feature.longitude}`,
+                  `${feature.latitude}`
+                ],
+                'type': 'Point'
+              },
+              'place_name': `⭐️ ${feature.name}`,
+              'center': [feature.longitude, feature.latitude]
+            }
+
+            matchingRestaurants.push(matchingRestaurant);
+          }
+        };
+
+      return matchingRestaurants;
+    }
+
+    //Add search bar control to map2
+    map2.addControl(new MapboxGeocoder({
+      accessToken: mapboxgl.accessToken,
+      localGeocoder: forwardGeocoder,
+      placeholder: 'Enter search e.g. Allora',
+      mapboxgl: mapboxgl
+    }))
+
     //add navigation control to map2
     map2.addControl(new mapboxgl.NavigationControl());
 
