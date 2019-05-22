@@ -302,8 +302,6 @@ $(function() {
   }).fail(function (a, b, error) {
     console.log(error)
   })
-  //Print restaurant array to console.
-  // console.log(restaurants);
 
   //Hide restaurant info
   $(".restaurant-info-container").addClass("hide");
@@ -377,10 +375,10 @@ $(function() {
 
 
       $.each(value.tags,function (index,value2) {
-        console.log('tag:',value2);
+        // console.log('tag:',value2);
         tagsHtml = tagsHtml.concat(`<span>${value2}</span>`);
       });
-      console.log(tagsHtml);
+      // console.log(tagsHtml);
       $(".menu-item-list").append(`<div class="menu-item-tags">${tagsHtml}</div>`);
     })
   }
@@ -398,7 +396,7 @@ $(function() {
   //----------------LIST OF HANDLERS-------------------
   //Function to handle filters that were selected by user.
   function handleFilter(){
-    console.log('calling handleFilter function');
+    // console.log('calling handleFilter function');
     //Clear list of restaurants on page
     clearRestaurantList();
     selectedRestrictions = [];
@@ -409,7 +407,7 @@ $(function() {
       selectedRestrictions.push(removeHyphen(checkbox.id));
     });
 
-    console.log("selectedRestrictions",selectedRestrictions);
+    // console.log("selectedRestrictions",selectedRestrictions);
 
     //Check what elements are hidden/unhidden
     if($('.restaurant-list').hasClass('hide')){
@@ -483,7 +481,7 @@ $(function() {
       //restriction was found.
       return $.inArray(true,results) !== -1;
     });
-    console.log("restFilter",restFilter);
+    // console.log("restFilter",restFilter);
 
     //Display restFilter array to screen
     displayRestaurantNames(restFilter);
@@ -513,7 +511,7 @@ $(function() {
     $(".back-button").removeClass("hide");
 
     //Print list of restaurants that met restrictions chosen
-    console.log("restFilter",restFilter);
+    // console.log("restFilter",restFilter);
 
     //restaurantName variable will hold name of restaurant
     let restaurantName = $(this).attr('id');
@@ -526,7 +524,7 @@ $(function() {
     chosenRestaurant = restFilter.find(function (restaurant) {
       return restaurantName === restaurant.name;
     });
-    console.log("chosenRestaurant:",chosenRestaurant);
+    // console.log("chosenRestaurant:",chosenRestaurant);
 
     //Display restaurant Name
     $(".results h3").text(chosenRestaurant.name);
@@ -535,7 +533,7 @@ $(function() {
     $(".results h3").after(`<div class="carousel"></div>`);
     //Add images to carousel div
     $.each(chosenRestaurant.images, function(index,image){
-      console.log('Chosen restaurant img filename:' , image)
+      // console.log('Chosen restaurant img filename:' , image);
       $(".carousel").append(`<div><img src="./images/${image}"></div>`);
     });
 
@@ -548,8 +546,8 @@ $(function() {
   		fade: true,
   		cssEase: 'linear'
 	   });
-    console.log(chosenRestaurant.latitude);
-    console.log(chosenRestaurant.longitude);
+    // console.log(chosenRestaurant.latitude);
+    // console.log(chosenRestaurant.longitude);
 
     //Display Map
     let map = new mapboxgl.Map({
@@ -581,7 +579,7 @@ $(function() {
 
     //Display menu items that meet the selected restrictions
     chosenRestMenuItems = chosenRestaurant.menuItems;
-    console.log('chosenRestMenuItems:',chosenRestMenuItems);
+    // console.log('chosenRestMenuItems:',chosenRestMenuItems);
 
     //Filter through menu items for chosen restaurant. Pull out items that meet
     //diet restriction selections
@@ -598,7 +596,7 @@ $(function() {
       return $.inArray(true,results) !== -1;
     });
 
-    console.log(filteredMenuItems);
+    // console.log(filteredMenuItems);
 
     //Display filtered menu items to screen
     displayMenuItems(filteredMenuItems);
@@ -643,8 +641,8 @@ $(function() {
 
   //Function that will handle map view Button
   function handleMapView() {
-    console.log('Calling handleMapView function');
-    console.log('restFilter:',restFilter);
+    // console.log('Calling handleMapView function');
+    // console.log('restFilter:',restFilter);
 
     //Check if map container is hidden. If it is hidden, unhide it.
     if($('.restaurant-list .map-container').hasClass('hide') === true){
@@ -665,8 +663,9 @@ $(function() {
     let map2 = new mapboxgl.Map({
       container: 'map2', // HTML container id
       style: 'mapbox://styles/mapbox/streets-v9', // style URL
-      center: [-73.989731, 40.741353], // starting position as [lng, lat]
-      zoom: 12
+      center: [-73.990748, 40.734817], // starting position as [lng, lat]
+      //-73.989731, 40.741353
+      zoom: 11  //12
     })
 
     //Iterate through filtered restaurant array.
@@ -696,12 +695,11 @@ $(function() {
 
     //Listen for click on link on popup in map. Call handleRestaurantLink
     //funciton.
-    // $("#map2 a").click(handleRestaurantLink);
     $('body').on('click', '.mapboxgl-popup-content a', handleRestaurantLink);
   };//end of handleMapView function
 
   function handleBackToList() {
-    console.log('Calling handleBackToList');
+    // console.log('Calling handleBackToList');
 
     //If restaurant list is hidden, unhide it.
     if($('.restaurant-list ul').hasClass('hide') === true){

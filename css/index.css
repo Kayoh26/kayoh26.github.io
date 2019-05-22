@@ -3,13 +3,14 @@
 } */
 body {
   font-family: Helvetica, Arial, sans-serif;
-  margin: 0 auto;
-  /* background-color: #43455c; */
+  margin: auto;
+  height: 100%;
+  background-color:  #43455c;
 }
-/* .container{
-  margin: 0 auto;
-  background-color: #43455c;
-} */
+.container{
+  margin: auto;
+  height: 100%;
+}
 
 /*Logo Style*/
 .wcio-logo {
@@ -103,24 +104,6 @@ body {
   transition-duration: .5s; */
 }
 
-/*Results Page Styles*/
-/* .back-to-results { */
-  /* background-color: #2E3047; */
-  /* color: #3BBA9C; */
-  /* padding: 5px 40px 5px 40px;
-  text-align: center;
-  margin: 3px;
-
-}
-.back-to-results a{
-  background-color: #2E3047;
-  text-decoration: none;
-  color: #3BBA9C;
-  font-size: 25px;
-  padding: 5px 40px 5px 40px;
-  border: .5px solid white;
-} */
-
 /*Results Container styles*/
 .restaurant-info-container {
   background-color:  #43455c;
@@ -160,6 +143,7 @@ body {
 
 img{
   max-width: 100%;
+  margin: auto;
 }
 
 .menu-item-description {

@@ -301,14 +301,14 @@
        "description": "Spiced chickpeas, parmigiano-reggiano, honey lemon miso",
        "specialInstructions": "",
        "price": 7.00,
-       "tags": ["low sugar"]
+       "tags": ["low sugar", "low cholesterol"]
      },
      {
        "name": "Baby Bok Choy",
        "description": "Garlic, olive oil sea salt, white wines.",
        "specialInstructions": "",
        "price": 7.00,
-       "tags": ["low sugar"]
+       "tags": ["low sugar", "low cholesterol"]
      }
    ]
  },
@@ -343,6 +343,349 @@
        "specialInstructions": "with Shrimp",
        "price": 14.00,
        "tags": ["low sugar"]
+     }
+   ]
+ },
+ {
+   "name": "Jack’s Wife Freda - Soho",
+   "url":"http://jackswifefreda.com/",
+   "images":[
+     "jackswife1.jpg",
+     "jackswife2.jpg",
+     "jackswife3.jpg"
+   ],
+   "address": {
+     "street":"224 Lafayette Street",
+     "city": "New York",
+     "state": "NY",
+     "zip": 10012
+   },
+   "latitude":40.722141,
+   "longitude":-73.997507,
+   "phone":"2125108550",
+   "menuItems":[
+     {
+       "name": "Grilled Eggplant Baguette",
+       "description": "Roasted tomato, mozzarella, olive tapenade & watercress",
+       "specialInstructions": "With Arugula salad",
+       "price": 14.00,
+       "tags": ["low sugar","low cholesterol"]
+     },
+     {
+       "name": "Fried Zucchini",
+       "description": "With smoked paprika aioli",
+       "specialInstructions": "",
+       "price": 12.00,
+       "tags": ["low sugar","low cholesterol"]
+     },
+     {
+       "name": "Tuna Salad",
+       "description": "chopped tomatoes, avocado, red onions in a sweet soy balsamic dressing, served with arugula and sourdough",
+       "specialInstructions": "",
+       "price": 17.00,
+       "tags": ["low cholesterol"]
+     },
+     {
+       "name": "Greek Salad",
+       "description": "Kale, cucumber, tomato, pickled red onions, salted-cured olives and feta in a red wine vinaigrette",
+       "specialInstructions": "",
+       "price": 14.00,
+       "tags": ["low sugar","low cholesterol"]
+     }
+   ]
+ },
+ {
+   "name": "Spicy Moon",
+   "url":"http://spicymoonnyc.com/",
+   "images":[
+     "spicymoon1.jpg",
+     "spicymoon2.jpg",
+     "spicymoon3.jpg"
+   ],
+   "address": {
+     "street":"328 East 6th Street",
+     "city": "New York",
+     "state": "NY",
+     "zip": 10003
+   },
+   "latitude":40.726747,
+   "longitude":-73.987250,
+   "phone":"6464298471",
+   "menuItems":[
+     {
+       "name": "Vegetable Ramen",
+       "description": "Chef’s veggie broth with vegetables noodles and fried eggplant",
+       "specialInstructions": "",
+       "price": 14.95,
+       "tags": ["low sugar","low cholesterol"]
+     },
+     {
+       "name": "Vegetable Wonton in Chili Oil",
+       "description": "Tasty veggie wontons in tasty Sichuan chili oil",
+       "specialInstructions": "",
+       "price": 8.95,
+       "tags": ["low cholesterol"]
+     },
+     {
+       "name": "Vegetable Dumplings",
+       "description": "6 pieces of hand made dumplings",
+       "specialInstructions": "",
+       "price": 9.95,
+       "tags": ["low cholesterol"]
+     },
+     {
+       "name": "Steamed Eggplant with Pepper Sauce",
+       "description": "A traditional cold appetizer, served with a light garlic pepper sauce and chopped spicy chilies",
+       "specialInstructions": "",
+       "price": 7.95,
+       "tags": ["low sugar","low cholesterol"]
+     },
+     {
+       "name": "Peppercorn Brussel Sprouts",
+       "description": "With Szechuan peppercorns",
+       "specialInstructions": "",
+       "price": 8.95,
+       "tags": ["low sugar","low cholesterol"]
+     }
+   ]
+ },
+ {
+   "name": "ABCV",
+   "url":"https://www.abchome.com/dine/abcv/",
+   "images":[
+     "abcv1.jpg",
+     "abcv2.jpg",
+     "abcv3.jpg"
+   ],
+   "address": {
+     "street":"38 East 19th Street",
+     "city": "New York",
+     "state": "NY",
+     "zip": 10003
+   },
+   "latitude":40.737990,
+   "longitude":-73.989284,
+   "phone":"2124755829",
+   "menuItems":[
+     {
+       "name": "Green Chickpea Hummus, Thai Basil",
+       "description": "With Fresh Pita or Crudite",
+       "specialInstructions": "",
+       "price": 18.00,
+       "tags": ["low sugar","low cholesterol"]
+     },
+     {
+       "name": "Baby Mustard Greens",
+       "description": "Fermented Vegetables, Avocado",
+       "specialInstructions": "",
+       "price": 15.00,
+       "tags": ["low sugar","low cholesterol"]
+     },
+     {
+       "name": "Beluga Lentils, Chili Oil And Black Vinegar",
+       "description": "Yams Broccoli Stems, Cilantro",
+       "specialInstructions": "",
+       "price": 18.00,
+       "tags": ["low sugar","low cholesterol"]
+     },
+     {
+       "name": "Marinated Kale And Avocado",
+       "description": "Mint Pesto, Asparagus, Pita",
+       "specialInstructions": "",
+       "price": 18.00,
+       "tags": ["low sugar","low cholesterol"]
+     },
+     {
+       "name": "Crunchy Lettuce, Spring Vegetables, Cashew",
+       "description": "Mustard Dressings, Fresh Herbs",
+       "specialInstructions": "",
+       "price": 17.00,
+       "tags": ["low sugar","low cholesterol"]
+     }
+   ]
+ },
+ {
+   "name": "Avocaderia",
+   "url":"https://www.avocaderia.com/",
+   "images":[
+     "avocaderia1.jpg",
+     "avacaderia2.jpg",
+     "avacaderia3.jpg"
+   ],
+   "address": {
+     "street":"238 36th St",
+     "city": "Brooklyn",
+     "state": "NY",
+     "zip": 11232
+   },
+   "latitude":40.656252,
+   "longitude":-74.007833,
+   "phone":"3472270350",
+   "menuItems":[
+     {
+       "name": "Burrata Sunshine",
+       "description": "Cold Farro mix, spinach, arugula, snap peas, edamame, charred asparagus, roasted yellow squash, charred asparagus, cherry tomatoes, avo rose, burrata, mixed seed and cashew basil dressing",
+       "specialInstructions": "",
+       "price": 13.45,
+       "tags": ["low sugar","low cholesterol"]
+     },
+     {
+       "name": "Impossi-Bowl",
+       "description": "Warm quinoa, shredded kale, carrots, purple cabbage, roasted beets, pickled onions, sliced avo, impossible meatballs, mixed seeds and chipotle dressings",
+       "specialInstructions": "",
+       "price": 14.85,
+       "tags": ["low sugar","low cholesterol"]
+     },
+     {
+       "name": "The Tahini Gem",
+       "description": "Lettuce, cucumbers, spiced chickpeas, feta, cherry tomatoes, kalamata olives, pickled onions, slice avo, pistachio dukkah and hummus tahini ranch dressings",
+       "specialInstructions": "",
+       "price": 13.45,
+       "tags": ["low sugar","low cholesterol"]
+     },
+     {
+       "name": "My Thai",
+       "description": "Spinach, arugula, shredded cabbage, cilantro, shredded carrots, avocado, organic tofu, watermelon radish, bean sprouts, spicy cashew and ginger sesame dressings",
+       "specialInstructions": "",
+       "price": 18.00,
+       "tags": ["low sugar","low cholesterol"]
+     }
+   ]
+ },
+ {
+   "name": "Ladybird",
+   "url":"http://www.ladybirdny.com/",
+   "images":[
+     "ladybird1.jpg",
+     "ladybird2.jpg",
+     "ladybird3.jpg"
+   ],
+   "address": {
+     "street":"111 E 7th St",
+     "city": "New York",
+     "state": "NY",
+     "zip": 10009
+   },
+   "latitude":40.726668,
+   "longitude":-73.984464,
+   "phone":"9172615524",
+   "menuItems":[
+     {
+       "name": "Kale",
+       "description": "Pickled Daikon, radish, puffed rice, black garlic",
+       "specialInstructions": "",
+       "price": 11.00,
+       "tags": ["low cholesterol"]
+     },
+     {
+       "name": "Brussels Sprouts",
+       "description": "Endive, apple, quinoa, soy-truffle vinaigrette",
+       "specialInstructions": "",
+       "price": 12.00,
+       "tags": ["low cholesterol"]
+     },
+     {
+       "name": "Sun Dried Tomato Tart",
+       "description": "Tomato rose vinaigrette, arugula, whipped cashew",
+       "specialInstructions": "",
+       "price": 14.00,
+       "tags": ["low cholesterol"]
+     },
+     {
+       "name": "Baby Corn",
+       "description": "Blended herbs, fried baby corn, corn puree, chickpea-based parmesan almonds",
+       "specialInstructions": "",
+       "price": 11.00,
+       "tags": ["low cholesterol"]
+     }
+   ]
+ },
+ {
+   "name": "Candle 79",
+   "url":"http://candle79.com/",
+   "images":[
+     "candle1.jpg",
+     "candle2.jpg",
+     "candle3.jpg"
+   ],
+   "address": {
+     "street":"154 East 79th Street",
+     "city": "New York",
+     "state": "NY",
+     "zip": 10075
+   },
+   "latitude":40.774629,
+   "longitude":-73.958730,
+   "phone":"2125377179",
+   "menuItems":[
+     {
+       "name": "Grilled Kale",
+       "description": "String Beans, beluga lentils, kabocha squash, avocado, red onions, sunflower seeds, spelt berries, chive dressing",
+       "specialInstructions": "",
+       "price": 17.00,
+       "tags": ["low cholesterol"]
+     },
+     {
+       "name": "Steamed Dumplings",
+       "description": "Seitan, sugar snap peas, toasted cashews, sesame-ginger soy sauce",
+       "specialInstructions": "",
+       "price": 16.00,
+       "tags": ["low cholesterol"]
+     },
+     {
+       "name": "Bread Crumb-Crusted Cauliflower",
+       "description": "Lemon-almond cream, sugar snap peas, cayenne pepper aioli",
+       "specialInstructions": "",
+       "price": 17.00,
+       "tags": ["low cholesterol"]
+     },
+     {
+       "name": "Watermelon Salad",
+       "description": "Watercress, string beans, beets, grilled red onions, almond cheese, balsamic vinaigrette",
+       "specialInstructions": "",
+       "price": 18.00,
+       "tags": ["low cholesterol"]
+     }
+   ]
+ },
+ {
+   "name": "The VSpot",
+   "url":"http://vspot.restaurant/",
+   "images":[
+     "vspot1.jpg",
+     "vspot2.jpg",
+     "vspot3.jpg"
+   ],
+   "address": {
+     "street":"156 5th Avenue",
+     "city": "Brooklyn",
+     "state": "NY",
+     "zip": 11217
+   },
+   "latitude":40.678100,
+   "longitude":-73.979522,
+   "phone":"7189288778",
+   "menuItems":[
+     {
+       "name": "Kale Quinoa",
+       "description": "Sauteed garlic and olive oil, kale with organic quinoa. Gluten Free",
+       "specialInstructions": "",
+       "price": 5.00,
+       "tags": ["low cholesterol"]
+     },
+     {
+       "name": "Curried Kale With Chickpeas",
+       "description": "Kale and chickpeas sauteed with V Spot’s coconut curry sauce. Gluten Free",
+       "specialInstructions": "",
+       "price": 6.00,
+       "tags": ["low cholesterol"]
+     },
+     {
+       "name": "Mixed Veggies",
+       "description": "Spinach, Kale, Tomatoes, Squash, Garlic and onions in olive oil or steamed. Gluten Free. Soy free",
+       "specialInstructions": "",
+       "price": 6.00,
+       "tags": ["low cholesterol"]
      }
    ]
  }
